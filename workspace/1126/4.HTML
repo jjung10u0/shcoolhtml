@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = function (){
+            let output=' ';
+            for (let i =0; i < 10; i++){
+                output += '<div></div>'
+            }
+            document.body.innerHTML = output;
+            //문서 객체를 선택
+            let divs = document.querySelectorAll('div');
+            for (let i = 0; i <  divs.length; i++){
+                //변수를 선언
+                let div = divs;
+
+                //스타일 작용
+                div.stlye.height ='2px';
+                div.stlye.background = 'rgb(' + i + ',' + i + ')';
+            }
+        }
+    </script>
+</body>
+</html>

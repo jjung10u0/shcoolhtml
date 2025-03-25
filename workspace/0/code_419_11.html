@@ -1,0 +1,36 @@
+<!--419.p 11번-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>클릭</div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        let colors = ['red', 'green', 'blue'];
+        let currentColor = 0;
+    
+        $('div').css({
+            backgroundColor: colors[currentColor]
+        }).click(function () {
+            currentColor = (currentColor + 1) % colors.length; // 색상 순환
+            $(this).css('background-color', colors[currentColor]);
+        });
+    </script>
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>    
+</body>
+</html>

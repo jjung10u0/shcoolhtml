@@ -1,0 +1,66 @@
+<!--278.p 6번-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+            padding: 24px 0 0 0;
+            border-bottom: 2px(#c7c7c7)solid;
+        }
+        @media screen and (orientation: portrait) {
+            .left {
+                display: none;
+            }
+        }
+        /*orientation: portrait => 방향: 세로
+        orientation: landscape => 방향: 가로*/
+        @media screen and (orientation: landscape) {
+            .left {
+                width: 30%;
+                float: left;
+            }
+            .right {
+                width: 70%;
+                float: right;
+            }
+        }
+        .container{
+            padding: 16px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <div class="left">
+            <div class="container">
+                <h1>List</h1>
+                <ul>
+                    <li>Velit ipsum ullamco</li>
+                    <li>Nulla qui officia anim</li>
+                    <li>quis proident tempor ipsum</li>
+                    <li>et sunt sit culpa ad</li>
+                    <li>fugiat reprehenderit sint mollt.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="container">
+                <h1>Lorem ipsum</h1>
+                <p>Sunt nostrud consequat</p>
+                <p>Aute do et ullamco</p>
+                <p>Deserunt irure Lorme</p>
+                <p>Velit ipsum ullamco</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

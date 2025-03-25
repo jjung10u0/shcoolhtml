@@ -1,0 +1,17 @@
+<!--219.p 9번 : 스크립트가 헤드 안에있어 오류가 생길 수 있습니다.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1  id="element">Lorem ipsum dolor amet</h1>
+    <script>
+        let element = document.getElementById('element')
+        element.style.color = 'red';
+        element.innerHTML = 'From JavaScript';
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Process-1</h1>
+    <h2>Process-2/h2>
+    <span id="cont1"></span>
+    <script>
+        window.onload = function (){
+            //문서 객체 선택
+            let header = document.getElementById('header');
+            
+            for (let i = 0; i < headers.length; i++){
+                //변수 선언
+                let header =  headers[i];
+                //문서 객체를 조작
+                header.style.color = 'orange';
+                header.style.background = 'red';
+                header.innerHTML = 'From JavScipt';
+            }
+        }
+    </script>
+</body>
+</html>
