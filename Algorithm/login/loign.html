@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+    <script>
+        function login() {
+            var id = document.querySelector('#id');
+            var password = document.querySelector('#password');
+            var messageBox = document.querySelector('#error-message');
+
+            // 이전 오류 메시지 초기화
+            messageBox.textContent = "";
+
+            // 입력값 확인
+            if (id.value === "" || password.value === "") {
+                // 오류 메시지 표시
+                messageBox.textContent = "아이디와 비밀번호를 모두 입력해주세요.";
+                messageBox.style.color = "red"; // 오류 메시지 색상
+            } else {
+                // 로그인 성공 시 페이지 이동
+                location.href = 'mypage.html'; // 상대 경로 사용
+            }
+        }
+    </script>
+</head>
+<body>
+    <header id="top">
+        <div class="logo">
+            <a href="#"><img src="002.png" alt="로고" width="150px"></a>
+        </div>
+        <nav id="top-list">
+            <ul class="list">
+                <li><a href="#"><b>로그인</b></a></li>
+                <li><a href="#"><b>회원가입</b></a></li>
+            </ul>
+            <ul class="icon">
+                <li><a href="mypage.html"><img src="mypage.png" width="35px"></a></li>
+                <li><a href="#"><img src="home.png" width="35px"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="login">
+        <div class="login-wrapper">
+            <h2>Login</h2>
+            <form id="login-form" onsubmit="event.preventDefault(); login();">
+                <input id="id" type="text" name="userName" placeholder="아이디" maxlength="7">
+                <input id="password" type="password" name="userPassword" placeholder="비밀번호" maxlength="20">
+                <!-- 오류 메시지를 표시할 박스 -->
+                <div id="error-message" style="margin-top: 10px;"></div>
+                <label for="remember-check">
+                    <input type="checkbox" id="remember-check">아이디 저장하기
+                </label>
+                <input type="submit" value="로그인">
+            </form>
+        </div>
+    </div>
+    <footer id="login-end">
+        <ul class="list-end">
+            <li><a href="">예시</a></li>
+            <li><a href="">예시</a></li>
+            <li><a href="">예시</a></li>
+            <li><a href="">예시</a></li>
+            <li><a href="">예시</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

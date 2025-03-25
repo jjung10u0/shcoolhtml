@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 레이아웃 계산이 정확하게 되도록 설정 */
+}
+#wrap{
+    width: 1200px;
+    height: 728px;
+    margin-left: 170px;
+    background-color: aqua;
+    position: relative;
+}
+#a{
+    width: 500px;
+    height: 728px;
+    float: left;
+    background-color: blue;
+}
+#b{
+    width: 700px;
+    height: 364px;
+    float: left;
+    background-color: red;
+}
+#c{
+    width: 700px;
+    height: 364px;
+    float: left;
+    background-color: yellow;
+}

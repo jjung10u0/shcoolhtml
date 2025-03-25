@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <link rel="stylesheet" href="mypage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const buttonItems = document.querySelectorAll('.button-list > li');
+
+            buttonItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    buttonItems.forEach(el => el.classList.remove('active'));
+                    item.classList.add('active');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="page">
+
+        <header id="top">
+            <div class="logo">
+                <a href="#"><img src="002.png" alt="로고" width="150px"></a>
+            </div>
+            <nav id="top-list">
+                <ul class="list">
+                    <li><a href="file:///C:/Users/user/Desktop/R/login/loign.html"><b>로그인</b></a></li>
+                    <li><a href="#"><b>회원가입</b></a></li>
+                </ul>
+                <ul class="icon">
+                    <li><a href="#"><img src="mypage.png" width="35px"></a></li>
+                    <li><a href="#"><img src="home.png" width="35px"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="profile">
+                <div id="profile-image">
+                    <div class="profile1"></div>
+                </div>
+                <div id="profile-name">
+                    <div class="name1">
+                        <h1>@Sample</h1>
+                    </div>
+                    <div class="name2">
+                        <p>메모장에 추가 내용을 작성하세요.</p>
+                    </div>
+                </div>
+            </section>
+            <nav id="button">
+                <ul class="button-list">
+                    <li class="active"><a href="#"><img src="grid.png" alt="그리드" width="20px"></a></li>
+                    <li><a href="#"><img src="likefull.png" alt="좋아요" width="20px"></a></li>
+                </ul>
+            </nav>
+            <div id="box">
+            </div>           
+            <section id="main">
+                <article class="main-image">
+                    <p>로그인이 필요합니다.</p>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

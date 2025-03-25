@@ -1,0 +1,151 @@
+/* Reset */
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global */
+body {
+    font-family: "Gowun Batang", serif;
+    max-width: 900px;
+    margin: 0 auto;
+    /* background-color: #FFFDF5; */
+    color: #333;
+}
+#page{
+    background-color: white;
+}
+/* Header */
+#top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+#top-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    width: 100%;
+}
+
+.icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icon > li > a, .list > li > a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.icon > li > a:hover, .list > li > a:hover {
+    color: #E48800;
+}
+
+.list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Profile */
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+#profile-image {
+    margin-bottom: 20px;
+}
+
+.profile1 {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile-name .name1 h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#profile-name .name2 {
+    background-color: #FFF3E0;
+    border-radius: 15px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+/* Buttons */
+#button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-list {
+    display: flex;
+    gap: 90px; /* 버튼 간격을 좁혀 겹쳐 보이도록 설정 */
+    /* border-bottom: 2px solid #ffcd4a; 기본 스타일 (하단 선 추가) */
+}
+
+.button-list > li {
+    text-align: center;
+    padding-bottom: 10px; /* 클릭 영역 확장 */
+    border-bottom: 2px solid transparent; /* 더 두껍고 긴 선 */
+    width: 90px; /* 버튼 크기를 넓게 조정 */
+    transition: border-color 0.3s ease;
+}
+
+.button-list > li:hover {
+    border-bottom: 2px solid #ffcd4a; /* 호버 시 선 강조 */
+}
+
+.button-list > li.active {
+    border-bottom: 2px solid #ffcd4a; /* 활성 상태에서도 강조 */
+}
+#box{
+    margin: auto;
+    width: 900px;
+    border-top: 1px solid #ffe6a7;
+}
+
+/* Main Section */
+#main {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    /* background-color: #FFF5E5; */
+    border-radius: 20px;
+    text-align: center;
+    color: #666;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.main-image > p {
+    font-size: 18px;
+}
